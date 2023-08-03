@@ -14,14 +14,25 @@ import { Button } from "@/components/ui/button";
 export function Cardfrom() {
   return (
     <Tabs
-      defaultValue="account"
+      defaultValue="login"
       className="flex flex-col flex-grow w-full h-full xl:w-1/2 xl:h-1/2"
+      id={"1"}
     >
       <TabsList className="self-start">
-        <TabsTrigger value="login" className=" hover:bg-orange-400">
+        <TabsTrigger
+          value="login"
+          className=" hover:bg-orange-400"
+          aria-controls="radix-:R1mcq:-trigger-login"
+          id="radix-:R1mcq:-trigger-login"
+        >
           Log In
         </TabsTrigger>
-        <TabsTrigger value="signup" className=" hover:bg-orange-400">
+        <TabsTrigger
+          value="signup"
+          className=" hover:bg-orange-400"
+          aria-controls="radix-:R1mcq:-trigger-signup"
+          id="radix-:R1mcq:-trigger-signup"
+        >
           Sign Up
         </TabsTrigger>
       </TabsList>
@@ -29,6 +40,8 @@ export function Cardfrom() {
       <TabsContent
         value="login"
         className="flex-grow overflow-y-auto shadow-2xl"
+        aria-labelledby="radix-:R1mcq:-trigger-login"
+        id="radix-:R1mcq:-trigger-login"
       >
         <Card className="flex flex-col items-center w-full h-full p-5 ">
           <CardHeader>
@@ -63,7 +76,7 @@ export function Cardfrom() {
           <CardFooter className="flex justify-center w-full p-0 mt-10 md:mt-5 md:h-1/5">
             <Button
               variant="outline"
-              className="w-3/4 shadow-md hover:bg-orange-400 md:h-1/3 xl:text-2xl"
+              className="w-3/4 shadow-md hover:bg-orange-400 md:h-1/3 md:text-lg xl:text-2xl"
             >
               Log In
             </Button>
@@ -74,6 +87,8 @@ export function Cardfrom() {
       <TabsContent
         value="signup"
         className="flex-grow overflow-y-auto shadow-2xl"
+        aria-labelledby="radix-:R1mcq:-trigger-signup"
+        id="radix-:R1mcq:-trigger-signup"
       >
         <Card className="flex flex-col items-center w-full h-full p-5 ">
           <CardHeader>
