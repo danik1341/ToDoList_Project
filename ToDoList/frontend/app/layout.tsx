@@ -4,6 +4,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
+import { TaskTab } from '@/components/TaskTab'
 
 const inter = Inter({ subsets: ['latin'] })
 
