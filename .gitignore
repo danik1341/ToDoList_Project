@@ -1,1 +1,3 @@
 ToDoList/.env
+ToDoList/backend/__pycache__/DB_connection.cpython-311.pyc
+ToDoList/frontend/.env
