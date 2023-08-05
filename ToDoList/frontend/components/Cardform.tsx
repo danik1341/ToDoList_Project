@@ -105,7 +105,7 @@ export function Cardfrom() {
                 type="text"
                 id="username"
                 placeholder="Username"
-                className="h-3/5 md:h-2/5"
+                className="h-3/5 md:h-2/5 md:text-lg lg:text-2xl md:font-semibold"
                 onChange={(e) =>
                   setLoginData((prevData) => ({
                     ...prevData,
@@ -115,14 +115,14 @@ export function Cardfrom() {
               />
             </div>
             <div className="h-2/5">
-              <Label htmlFor="password" className="text-xl ">
+              <Label htmlFor="password" className="text-xl">
                 Your Password
               </Label>
               <Input
                 type="password"
                 id="password"
                 placeholder="Password"
-                className="h-3/5 md:h-2/5"
+                className="h-3/5 md:h-2/5 md:text-lg lg:text-2xl md:font-semibold"
                 onChange={(e) =>
                   setLoginData((prevData) => ({
                     ...prevData,
@@ -135,7 +135,7 @@ export function Cardfrom() {
           <CardFooter className="flex flex-col justify-center w-full p-0 mt-10 space-y-2 md:mt-5 md:h-1/5">
             <Button
               variant="outline"
-              className="w-3/4 shadow-md hover:bg-orange-400 md:h-1/3 md:text-lg xl:text-2xl"
+              className="w-3/4 shadow-md hover:bg-orange-400 md:h-1/3 md:text-lg lg:text-2xl"
               onClick={handleLogin}
             >
               Log In
@@ -170,7 +170,7 @@ export function Cardfrom() {
                 type="text"
                 id="username"
                 placeholder="Username"
-                className="h-2/5"
+                className="h-2/5 md:text-lg lg:text-2xl md:font-semibold"
                 required
                 onChange={(e) =>
                   setSignupData((prevData) => ({
@@ -191,7 +191,7 @@ export function Cardfrom() {
                 type="password"
                 id="password"
                 placeholder="Password"
-                className="h-2/5"
+                className="h-2/5 md:text-lg lg:text-2xl md:font-semibold"
                 required
                 onChange={(e) =>
                   setSignupData((prevData) => ({
