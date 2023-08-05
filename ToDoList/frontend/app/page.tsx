@@ -1,7 +1,7 @@
 "use client"
-import { Cardfrom } from '@/components/Cardform'
-import { Navbar } from '@/components/Navbar'
-import Image from 'next/image'
+// import { Cardfrom } from '@/components/Cardform'
+// import { Navbar } from '@/components/Navbar'
+// import Image from 'next/image'
 
 export default function Home() {
   return (
