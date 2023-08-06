@@ -1,6 +1,8 @@
+import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Flex } from "next/font/google";
+import { SelectedListProvider, UserProvider } from "@/lib/Context";
 
 const roboto = Roboto_Flex({
   subsets: ["latin"],
@@ -18,7 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="h-full min-h-screen">{children}</body>
+      <body className="h-full min-h-screen">
+        <UserProvider>
+          <SelectedListProvider>
+            <Navbar />
+            {children}
+          </SelectedListProvider>
+        </UserProvider>
+      </body>
     </html>
   );
 }
