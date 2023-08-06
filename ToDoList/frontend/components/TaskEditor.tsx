@@ -2,7 +2,7 @@
 
 export function TaskEditor() {
   return (
-    <div className=" md:text-xl rounded-2xl border-r-2 border-b-2 border-neutral-400 shadow-lg min-h-[600px] flex flex-col items-center pb-8 mb-4">
+    <div className="md:mx-20 lg:mx-40 xl:mx-60 md:text-xl rounded-2xl border-r-2 border-b-2 border-neutral-400 shadow-lg min-h-[600px] flex flex-col items-center pb-8 mb-4">
         <h1 className="mb-8 text-4xl">Edit Your Task</h1>
         <div className=" flex flex-wrap justify-center space-y-4">
             <div className="flex flex-col w-[90%]">
