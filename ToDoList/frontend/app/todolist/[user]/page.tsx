@@ -3,16 +3,8 @@
 import TaskModel from "@/components/TaskModel";
 import { Button } from "@/components/ui/button";
 import { useSelectedList, useUserContext } from "@/lib/Context";
-import {
-  addTask,
-  checkUser,
-  deleteTask,
-  fetchTasks,
-  getUser,
-} from "@/lib/server-utils";
+import { addTask, checkUser, deleteTask, fetchTasks } from "@/lib/server-utils";
 import { Task } from "@/lib/types/Task";
-import { UserData } from "@/lib/types/UserData";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 type pageProps = {
@@ -26,7 +18,7 @@ interface TaskSub {
   notes: string;
 }
 
-const page: React.FC<pageProps> = ({ params }) => {
+const Page: React.FC<pageProps> = ({ params }) => {
   const { selectedList } = useSelectedList() || {};
   const [tasks, setTasks] = useState<Task[]>([]);
   // const [user, setUser] = useState<UserData | null>(null);
@@ -241,4 +233,4 @@ const page: React.FC<pageProps> = ({ params }) => {
     </div>
   );
 };
-export default page;
+export default Page;

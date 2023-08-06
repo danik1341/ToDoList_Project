@@ -14,8 +14,6 @@ export function Navbar() {
   const { username, setUsername } = useUserContext();
   const [user, setUser] = useState<UserData | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [newListTitle, setNewListTitle] = useState("");
-  const [addListMessage, setAddListMessage] = useState("");
   const router = useRouter();
 
   useEffect(() => {
