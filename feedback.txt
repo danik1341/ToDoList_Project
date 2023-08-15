@@ -1,0 +1,8 @@
+Daniel & Gabriel To do list
+The preoject is well structured. 
+The Database connector class is a clever way of showing your skills with postgresql. Good job!
+video presentation in time:  no 0/10
+Python OOP 8/10
+Databases 10/10
+APIJSON 5/10
+General score 6
